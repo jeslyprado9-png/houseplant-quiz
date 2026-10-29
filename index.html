@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#244b37">
+  <title>Which Houseplant Fits Your Lifestyle?</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="brand">✳ THE LITTLE GREEN QUIZ</span>
+      <p class="eyebrow">A little nature. A happier home.</p>
+      <h1>Which houseplant fits your lifestyle?</h1>
+      <p class="intro">Your perfect plant is out there. Answer five quick questions to find a green companion that feels right at home.</p>
+      <div class="botanical" aria-hidden="true">🌿</div>
+    </header>
+    <section class="quiz-card" aria-label="Houseplant quiz">
+      <form id="quiz">
+        <div class="progress-label"><span id="step-label">Question 1 of 5</span><span>Find your roots</span></div>
+        <progress id="progress" max="5" value="1" aria-label="Quiz progress"></progress>
+        <div id="question"></div>
+        <div class="actions"><button id="back" type="button" class="secondary" hidden>Back</button><button id="next" type="submit">Continue <span aria-hidden="true">→</span></button></div>
+      </form>
+      <article id="result" hidden aria-labelledby="result-title" tabindex="-1"></article>
+    </section>
+    <footer>Made for real life, and a little room to grow. <span aria-hidden="true">✳</span></footer>
+  </main>
+</body>
+</html>
